@@ -36,4 +36,12 @@ public class StudentController {
         students.addAll(studentList);
         return students;
     }
+
+    @GetMapping("/students")
+    public Object getStudentName(@RequestHeader ("Accept") String name) {
+        if(name.equals("Accept")) {
+            return students;
+        }
+        return "Format non supporté";
+    }
 }
