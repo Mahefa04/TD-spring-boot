@@ -1,4 +1,4 @@
-package com.example.TD4_springBootIntroduction.entity;
+package com.example.TD4_springBootIntroduction.Entity;
 
 import java.util.Objects;
 
